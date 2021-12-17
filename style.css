@@ -12,6 +12,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 10;
 }
 
 footer {
@@ -20,6 +21,7 @@ footer {
     background-color: grey;
     position: fixed;
     bottom: 0;
+    z-index: 11;
 }
 
 main {
@@ -32,4 +34,16 @@ aside {
     height: 100px;
     width: 100%;
     background-color: darkblue;
+}
+
+#main-tags {
+    border: 1px solid black;
+    height: 50px;
+    background-color: green;
+}
+
+#recently-played, #for-you, #popular {
+    border: 1px solid black;
+    height: 33%;
+    width: 100%;
 }
