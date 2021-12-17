@@ -4,3 +4,27 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+header {
+    height: 100px;
+    width: 100%;
+    background-color: red;
+}
+
+footer {
+    height: 100px;
+    width: 100%;
+    background-color: grey;
+}
+
+main {
+    height: calc(100vh - 200px);
+    width: 100%;
+    background-color: lightblue;
+}
+
+aside {
+    width: 15%;
+    height: calc(100vh - 200px);
+    background-color: black;
+}
