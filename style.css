@@ -12,7 +12,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 10;
+    z-index: 9;
 }
 
 footer {
@@ -21,7 +21,7 @@ footer {
     background-color: grey;
     position: fixed;
     bottom: 0;
-    z-index: 11;
+    z-index: 10;
 }
 
 main {
@@ -58,16 +58,25 @@ aside {
     position: fixed;
     bottom: 100px;
     left: 0;
+    z-index: 7;
 }
 
 #playlist {
-    width: 100%;
+    width: 15%;
     height: 200px;
     background-color: purple;
+    position: fixed;
+    top: 150px;
+    left: 0;
+    z-index: 8;
 }
 
 #main-nav {
-    width: 100%;
+    width: 15%;
     height: 150px;
     background-color: violet;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
 }
