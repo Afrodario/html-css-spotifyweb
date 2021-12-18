@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .debug {
@@ -79,7 +80,26 @@ main {
 aside {
     height: 100px;
     width: 100%;
-    background-color: darkblue;
+    background-color: #080b12;
+    opacity: 0.9;
+}
+
+#upgrade {
+    color: white;
+    text-transform: uppercase;
+    border: 1px solid white;
+    float: right;
+    padding: 10px 30px;
+    margin: 30px;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+#upgrade::after {
+    content: '';
+    display: table;
+    clear: both;
 }
 
 /* Parte centrale */
