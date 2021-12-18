@@ -5,9 +5,20 @@
     box-sizing: border-box;
 }
 
-body {
-    overflow: hidden;
+.debug {
+    border: 1px solid black;
 }
+
+/* Regole FlexBox */
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+/* Regole Header */
 
 header {
     height: 100vh;
@@ -18,44 +29,6 @@ header {
     left: 0;
     z-index: 9;
 }
-
-footer {
-    height: 100px;
-    width: 100%;
-    background-color: grey;
-    position: fixed;
-    bottom: 0;
-    z-index: 10;
-    overflow: hidden;
-}
-
-main {
-    width: 100%;
-    background-color: lightblue;
-    overflow: scroll;
-}
-
-aside {
-    height: 100px;
-    width: 100%;
-    background-color: darkblue;
-}
-
-#main-tags {
-    border: 1px solid black;
-    height: 50px;
-    background-color: green;
-}
-
-.content {
-    border: 1px solid black;
-    height: 400px;
-    width: 100%;
-}
-
-#recently-played {background-color: gold;}
-#for-you {background-color: silver;}
-#popular {background-color: brown;}
 
 #install {
     height: 50px;
@@ -85,4 +58,73 @@ aside {
     top: 0;
     left: 0;
     z-index: 9;
+}
+
+footer {
+    height: 100px;
+    width: 100%;
+    background-color: grey;
+    position: fixed;
+    bottom: 0;
+    z-index: 10;
+    overflow: hidden;
+}
+
+main {
+    background-color: lightblue;
+    overflow-y: scroll;
+    margin-left: 15%;
+}
+
+aside {
+    height: 100px;
+    width: 100%;
+    background-color: darkblue;
+}
+
+/* Parte centrale */
+
+/* Barra di navigazione tags */
+#main-tags {
+    border: 1px solid black;
+    height: 50px;
+    background-color: green;
+}
+
+.content {
+    border: 1px solid black;
+    height: 400px;
+    width: 100%;
+}
+
+/* Cover Gallery */
+.cover {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    margin: 0 12px;
+    align-items: center;
+}
+
+.cover img {
+    width: 100%;
+}
+
+/* Riprodotti di recente */
+#recently-played {
+    background-color: gold;
+}
+
+/* Scelti per te */
+#for-you {background-color: silver;}
+
+/* Più popolari */
+#popular {background-color: brown;}
+
+.artist {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: lightcoral;
+    margin: 0 12px;
 }
