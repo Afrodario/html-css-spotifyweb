@@ -198,7 +198,37 @@ footer {
 
 #player {
     width: 500px;
-    background-color: red;
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#player-buttons {
+    justify-content: space-around;
+}
+
+#player-buttons i {
+    width: 40px;
+}
+
+#player-nav {
+    width: 100%;
+    justify-content: space-around;
+}
+
+#player-bar {
+    width: 70%;
+    background-color: #717171;
+    border-radius: 10px;
+    height: 5px;
+    align-self: center;
+}
+
+#player-bar-now {
+    width: 30%;
+    height: 5px;
+    background-color: white;
+    border-radius: 10px;
 }
 
 #player-options {
