@@ -138,6 +138,17 @@ aside {
     border: 1px solid black;
     height: 50px;
     background-color: #141922;
+    text-align: center;
+}
+
+#main-tags ul {
+    margin: 15px 0;
+}
+
+#main-tags ul li {
+    display: inline-block;
+    color: #717171;
+    text-transform: uppercase;
 }
 
 .content {
