@@ -36,17 +36,26 @@ header {
 }
 
 #logo img {
-    width: 60%;
+    width: 130px;
 }
 
 #install {
-    height: 50px;
+    height: 100px;
     width: 15%;
-    background-color: red;
+    background-color: black;
     position: fixed;
     bottom: 100px;
     left: 0;
     z-index: 7;
+}
+
+.install-link {
+    color: #717171;
+    border-bottom: 2px solid #717171;
+}
+
+.user {
+    color: #717171;
 }
 
 #playlist {
@@ -61,6 +70,7 @@ header {
 
 #main-nav {
     width: 15%;
+    height: 150px;
     background-color: black;
     position: fixed;
     top: 0;
@@ -127,7 +137,7 @@ aside {
 #main-tags {
     border: 1px solid black;
     height: 50px;
-    background-color: green;
+    background-color: #141922;
 }
 
 .content {
