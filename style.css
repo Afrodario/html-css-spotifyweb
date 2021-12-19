@@ -90,16 +90,6 @@ header {
     color: white;
 }
 
-footer {
-    height: 100px;
-    width: 100%;
-    background-color: grey;
-    position: fixed;
-    bottom: 0;
-    z-index: 10;
-    overflow: hidden;
-}
-
 main {
     background-color: lightblue;
     overflow-y: scroll;
@@ -187,4 +177,54 @@ aside {
     border-radius: 50%;
     background-color: lightcoral;
     margin: 0 12px;
+}
+
+/* Regole footer */
+footer {
+    height: 100px;
+    width: 100%;
+    background-color: #282828;
+    position: fixed;
+    bottom: 0;
+    z-index: 10;
+    overflow: hidden;
+    justify-content: space-between;
+}
+
+#play-now {
+    width: 200px;
+    justify-content: space-between;
+}
+
+#player {
+    width: 500px;
+    background-color: red;
+}
+
+#player-options {
+    width: 200px;
+    background-color: green;
+}
+
+#play-info {
+    width: 45%;
+    align-items: center;
+}
+
+#play-icon {
+    width: 45%;
+    border: 1px solid red;
+    justify-content: center;
+    align-items: center;
+    color: #717171;
+}
+
+#play-now-cover {
+    height: 50px;
+    width: 50px;
+    background-color: brown;
+}
+
+#play-now-song span {
+    font-size: 12px;
 }
