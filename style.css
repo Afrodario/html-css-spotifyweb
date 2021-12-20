@@ -6,6 +6,10 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+body {
+    height: 100vh;
+}
+
 .debug {
     border: 1px solid black;
 }
@@ -22,13 +26,10 @@
 /* Regole Header */
 
 header {
-    height: 100vh;
-    width: 15%;
+    width: 150px;
+    height: 100%;
     background-color: black;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 9;
+    float: left;
 }
 
 #logo {
@@ -39,14 +40,14 @@ header {
     width: 130px;
 }
 
-#install {
-    height: 100px;
-    width: 15%;
+.navbar-bottom {
+    height: 80px;
     background-color: black;
-    position: fixed;
-    bottom: 100px;
-    left: 0;
-    z-index: 7;
+}
+
+.navbar-top {
+    height: calc(100% - 150px);
+    position: relative;
 }
 
 .install-link {
@@ -59,23 +60,13 @@ header {
 }
 
 #playlist {
-    width: 15%;
     background-color: black;
     color: #717171;
-    position: fixed;
-    top: 150px;
-    left: 0;
-    z-index: 8;
+    overflow-y: scroll;
 }
 
 #main-nav {
-    width: 15%;
-    height: 150px;
     background-color: black;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 9;
 }
 
 #main-nav ul li {
@@ -91,9 +82,16 @@ header {
 }
 
 main {
-    background-color: lightblue;
+    background-color: #141922;
     overflow-y: scroll;
-    margin-left: 15%;
+    height: 100%;
+    /* float: left; */
+}
+
+header::after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 aside {
@@ -125,7 +123,6 @@ aside {
 
 /* Barra di navigazione tags */
 #main-tags {
-    border: 1px solid black;
     height: 50px;
     background-color: #141922;
     text-align: center;
@@ -142,7 +139,6 @@ aside {
 }
 
 .content {
-    border: 1px solid black;
     height: 400px;
     width: 100%;
 }
@@ -151,7 +147,7 @@ aside {
 .cover {
     width: 200px;
     height: 200px;
-    background-color: blue;
+    background-color: #141922;
     margin: 0 12px;
     align-items: center;
 }
@@ -160,23 +156,37 @@ aside {
     width: 100%;
 }
 
+.title {
+    color: white;
+}
+
 /* Riprodotti di recente */
 #recently-played {
-    background-color: gold;
+    background-color: #141922;
 }
 
 /* Scelti per te */
-#for-you {background-color: silver;}
+#for-you {
+    background-color: #141922;
+}
 
 /* Più popolari */
-#popular {background-color: brown;}
+#popular {
+    background-color: #141922;
+}
 
 .artist {
     width: 200px;
     height: 200px;
-    border-radius: 50%;
-    background-color: lightcoral;
     margin: 0 12px;
+}
+
+.artist img {
+    border-radius: 50%;
+}
+
+.song-info {
+    align-items: center;
 }
 
 /* Regole footer */
@@ -186,7 +196,6 @@ footer {
     background-color: #282828;
     position: fixed;
     bottom: 0;
-    z-index: 10;
     overflow: hidden;
     justify-content: space-between;
 }

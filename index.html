@@ -17,78 +17,82 @@
     <!-- Inizio header -->
     <header>
 
-        <!-- Inizio barra di navigazione principale -->
-        <nav id="main-nav">
+        <div class="navbar-top">
+            <!-- Inizio barra di navigazione principale -->
+            <nav id="main-nav">
 
-            <div id="logo">
-                <img src="./img/logo.svg" alt="Spotify Logo">
-            </div>
-
-            <ul>
-                <li>
-                    <i class="fas fa-home"></i>
-                    Home
-                </li>
-                <li>
-                    <i class="fas fa-search"></i>
-                    Cerca
-                </li>
-                <li>
-                    <i class="fas fa-book-open"></i>
-                    La tua libreria
-                </li>
-            </ul>
-
-        </nav>
-        <!-- Fine barra di navigazione principale -->
-
-        <!-- Inizio barra playlist -->
-        <div id="playlist">
-
-            <h2>Playlist</h2>
-
-            <div class="playlist-btn">
-                <i class="fas fa-plus-square"></i>
-                <span>Crea Playlist</span>
+                <div id="logo">
+                    <img src="./img/logo.svg" alt="Spotify Logo">
+                </div>
 
                 <ul>
-                    <li>Nome Playlist</li>
-                    <li>Nome Playlist</li>
-                    <li>Nome Playlist</li>
-                    <li>Nome Playlist</li>
-                    <li>Nome Playlist</li>
-                    <li>Nome Playlist</li>
-                    <li>Nome Playlist</li>
+                    <li>
+                        <i class="fas fa-home"></i>
+                        Home
+                    </li>
+                    <li>
+                        <i class="fas fa-search"></i>
+                        Cerca
+                    </li>
+                    <li>
+                        <i class="fas fa-book-open"></i>
+                        La tua libreria
+                    </li>
                 </ul>
 
-            </div>
+            </nav>
+            <!-- Fine barra di navigazione principale -->
 
+            <!-- Inizio barra playlist -->
+            <div id="playlist">
+
+                <h2>Playlist</h2>
+
+                <div class="playlist-btn">
+                    <i class="fas fa-plus-square"></i>
+                    <span>Crea Playlist</span>
+
+                    <ul>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                    </ul>
+
+                </div>
+
+            </div>
+            <!-- Fine barra playlist -->
         </div>
-        <!-- Fine barra playlist -->
 
-        <!-- Inizio barra installa app -->
-        <div id="install">
+        <div class="navbar-bottom">
+            <!-- Inizio barra installa app -->
+            <div id="install">
 
-            <div class="install-link">
+                <div class="install-link">
 
-                <span>
-                    <i class="far fa-arrow-alt-circle-down"></i>
-                    Installa app
-                </span>
+                    <span>
+                        <i class="far fa-arrow-alt-circle-down"></i>
+                        Installa app
+                    </span>
+
+                </div>
+
+                <div class="user">
+
+                    <span>
+                        <i class="fas fa-user-circle"></i>
+                        John Doe
+                    </span>
+
+                </div>
 
             </div>
-
-            <div class="user">
-
-                <span>
-                    <i class="fas fa-user-circle"></i>
-                    John Doe
-                </span>
-
-            </div>
-
+            <!-- Fine barra installa app -->
         </div>
-        <!-- Fine barra installa app -->
 
     </header>
     <!-- Fine header -->
@@ -125,36 +129,86 @@
         <div id="recently-played" class="content">
 
             <!-- Inizio gallery -->
-            <div class="gallery flex debug">
+            <h1>Recently Played</h1>
+
+            <div class="gallery flex">
 
                 <div class="cover flex flex-col">
 
-                    <!-- <img> -->
+                    <img src="img/metal_lifting.jpg">
 
-                    <div class="song-info">
+                    <div class="song-info flex flex-col">
+
+                        <span class="title">Heavy Metal</span>
+                        <span>Subtitle</span>
 
                     </div>
 
                 </div>
 
-                <div class="cover flex">
-                    
+                <div class="cover flex flex-col">
+
+                    <img src="img/metal_lifting.jpg">
+
+                    <div class="song-info flex flex-col">
+
+                        <span class="title">Heavy Metal</span>
+                        <span>Subtitle</span>
+
+                    </div>
+
                 </div>
 
-                <div class="cover flex">
-                    
+                <div class="cover flex flex-col">
+
+                    <img src="img/metal_lifting.jpg">
+
+                    <div class="song-info flex flex-col">
+
+                        <span class="title">Heavy Metal</span>
+                        <span>Subtitle</span>
+
+                    </div>
+
                 </div>
 
-                <div class="cover flex">
-                    
+                <div class="cover flex flex-col">
+
+                    <img src="img/metal_lifting.jpg">
+
+                    <div class="song-info flex flex-col">
+
+                        <span class="title">Heavy Metal</span>
+                        <span>Subtitle</span>
+
+                    </div>
+
                 </div>
 
-                <div class="cover flex">
-                    
+                <div class="cover flex flex-col">
+
+                    <img src="img/metal_lifting.jpg">
+
+                    <div class="song-info flex flex-col">
+
+                        <span class="title">Heavy Metal</span>
+                        <span>Subtitle</span>
+
+                    </div>
+
                 </div>
 
-                <div class="cover flex">
-                    
+                <div class="cover flex flex-col">
+
+                    <img src="img/metal_lifting.jpg">
+
+                    <div class="song-info flex flex-col">
+
+                        <span class="title">Heavy Metal</span>
+                        <span>Subtitle</span>
+
+                    </div>
+
                 </div>
 
             </div>
@@ -164,28 +218,68 @@
         <!-- Fine recently played -->
 
         <!-- Inizio for you -->
+        <h1>Creato per John Doe</h1>
+
+        <h3>Più ascolti, più accurati saranno i suggerimenti</h3>
+        
         <div id="for-you" class="content flex">
 
-            <div class="cover flex">
-                    
+            <div class="cover flex flex-col">
+
+                <img src="img/metal_lifting.jpg">
+
+                <div class="song-info flex flex-col">
+
+                    <span class="title">Heavy Metal</span>
+
+                </div>
+
             </div>
 
-            <div class="cover flex">
-                    
+            <div class="cover flex flex-col">
+
+                <img src="img/metal_lifting.jpg">
+
+                <div class="song-info flex flex-col">
+
+                    <span class="title">Heavy Metal</span>
+
+                </div>
+
             </div>
 
         </div>
         <!-- Fine for you -->
 
         <!-- Inizio popolari -->
+        <h1>Artisti più popolari</h1>
+
+        <h3>Più ascolti, più accurati saranno i suggerimenti</h3>
+
         <div id="popular" class="content flex">
 
-            <div class="artist flex">
-                    
+            <div class="artist flex flex-col">
+
+                <img src="img/metal_lifting.jpg">
+
+                <div class="song-info flex flex-col">
+
+                    <span class="title">Heavy Metal</span>
+
+                </div>
+
             </div>
 
-            <div class="artist flex">
-                    
+            <div class="artist flex flex-col">
+
+                <img src="img/metal_lifting.jpg">
+
+                <div class="song-info flex flex-col">
+
+                    <span class="title">Heavy Metal</span>
+
+                </div>
+
             </div>
 
         </div>
