@@ -85,9 +85,9 @@ header::after {
 
 .select::before {
     content: "";
-    display: block;
+    display: inline-block;
     border-left: 2px solid green;
-    margin-left: 3px;
+    height: 25px;
 }
 
 #main-nav ul li:first-child {
@@ -250,10 +250,35 @@ aside {
     background-color: #141922;
     margin: 0 12px;
     align-items: center;
+    position: relative;
 }
 
 .cover img {
     width: 100%;
+}
+
+.overlay {
+    width: 100%;
+    height: 85%;
+    background-color: black;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.overlay i {
+    color: white;
+    font-size: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.cover:hover .overlay {
+    display: block;
 }
 
 .title {
@@ -296,13 +321,52 @@ footer {
     background-color: #282828;
     position: fixed;
     bottom: 0;
-    overflow: hidden;
     justify-content: space-between;
 }
 
 #play-now {
-    width: 200px;
+    /* width: 200px; */
     justify-content: space-between;
+    padding: 0 10px;
+}
+
+#play-now-cover, #play-now-song {
+    padding: 0 10px;
+}
+
+#play-now-cover img {
+    width: 60px;
+    margin-left: 5px;
+}
+
+#play-now-song span {
+    font-size: 12px;
+    font-weight: bold;
+    color: #717171;
+}
+
+#play-now-song .play-song {
+    font-size: 10px;
+}
+
+#play-now-song .play-artist {
+    color: white;
+}
+
+#play-info {
+    /* width: 45%; */
+    align-items: center;
+}
+
+#play-icon {
+    /* width: 45%; */
+    justify-content: center;
+    align-items: center;
+    color: #717171;
+}
+
+#play-icon i {
+    padding: 0 5px;
 }
 
 #player {
@@ -347,11 +411,16 @@ footer {
     align-items: center;
 }
 
+#player-options i {
+    padding: 0 10px;
+}
+
 #volume-bar {
     width: 60%;
     background-color: #717171;
     border-radius: 10px;
     height: 5px;
+    margin-right: 5px;
 }
 
 #volume-now {
@@ -359,29 +428,7 @@ footer {
     height: 5px;
     background-color: white;
     border-radius: 10px;
-}
-
-#play-info {
-    width: 45%;
-    align-items: center;
-}
-
-#play-icon {
-    width: 45%;
-    border: 1px solid red;
-    justify-content: center;
-    align-items: center;
-    color: #717171;
-}
-
-#play-now-cover {
-    height: 40px;
-    width: 60px;
-    background-color: brown;
-}
-
-#play-now-song span {
-    font-size: 12px;
+    justify-content: flex-start;
 }
 
 /* Responsive */
