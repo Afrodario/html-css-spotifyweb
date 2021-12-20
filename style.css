@@ -30,6 +30,8 @@ header {
     height: 100%;
     background-color: black;
     float: left;
+    position: relative;
+    z-index: 10;
 }
 
 header::after {
@@ -172,7 +174,7 @@ main {
     background-color: #141922;
     overflow-y: scroll;
     height: 100%;
-    /* float: left; */
+    padding-bottom: 150px;
 }
 
 aside {
@@ -180,6 +182,10 @@ aside {
     width: 100%;
     background-color: #080b12;
     opacity: 0.9;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 9;
 }
 
 #upgrade {
@@ -212,6 +218,7 @@ aside {
     height: 50px;
     background-color: #141922;
     text-align: center;
+    margin-top: 120px;
 }
 
 #main-tags ul {
@@ -245,6 +252,18 @@ aside {
 } */
 
 /* Cover Gallery */
+h1 {
+    color: white;
+    margin: 20px 0;
+    padding-left: 15px;
+}
+
+h3 {
+    color: #717171;
+    margin: 20px 0;
+    padding-left: 15px;
+}
+
 .cover {
     width: 200px;
     background-color: #141922;
@@ -288,16 +307,19 @@ aside {
 /* Riprodotti di recente */
 #recently-played {
     background-color: #141922;
+    padding-left: 15px;
 }
 
 /* Scelti per te */
 #for-you {
     background-color: #141922;
+    padding-left: 15px;
 }
 
 /* Più popolari */
 #popular {
     background-color: #141922;
+    padding-left: 15px;
 }
 
 .artist {
@@ -321,6 +343,7 @@ footer {
     background-color: #282828;
     position: fixed;
     bottom: 0;
+    z-index: 10;
     justify-content: space-between;
 }
 
@@ -353,6 +376,10 @@ footer {
     color: white;
 }
 
+#play-now-song .play-song:hover {
+    color: white;
+}
+
 #play-info {
     /* width: 45%; */
     align-items: center;
@@ -369,6 +396,10 @@ footer {
     padding: 0 5px;
 }
 
+#play-icon i:hover {
+    color: white;
+}
+
 #player {
     width: 500px;
     color: white;
@@ -382,6 +413,14 @@ footer {
 
 #player-buttons i {
     width: 40px;
+}
+
+#player-buttons .fa-play-circle {
+    font-size: 25px;
+}
+
+#player-buttons .fa-play-circle:hover {
+    transform: scale(1.5);
 }
 
 #player-nav {
@@ -402,6 +441,31 @@ footer {
     height: 5px;
     background-color: white;
     border-radius: 10px;
+}
+
+#player-bar-now:hover {
+    background-color: green;
+}
+
+.play-tab {
+    height: 15px;
+    width: 15px;
+    background-color: white;
+    border-radius: 50%;
+    align-self: center;
+    display: none;
+}
+
+#player-bar-now:hover + .play-tab {
+    display: block
+}
+
+#volume-now:hover {
+    background-color: green;
+}
+
+#volume-now:hover + .play-tab {
+    display: block;
 }
 
 #player-options {
