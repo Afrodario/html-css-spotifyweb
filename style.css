@@ -40,6 +40,10 @@ header {
     width: 130px;
 }
 
+#favicon {
+    display: none;
+}
+
 .navbar-bottom {
     height: 80px;
     background-color: black;
@@ -138,15 +142,14 @@ aside {
     text-transform: uppercase;
 }
 
-.content {
+/* .content {
     height: 400px;
     width: 100%;
-}
+} */
 
 /* Cover Gallery */
 .cover {
     width: 200px;
-    height: 200px;
     background-color: #141922;
     margin: 0 12px;
     align-items: center;
@@ -282,4 +285,64 @@ footer {
 
 #play-now-song span {
     font-size: 12px;
+}
+
+/* Responsive */
+@media screen and (max-width: 767px) {
+    h1 {
+        color: red;
+    }
+
+    .gallery {
+        flex-wrap: wrap;
+    }
+
+    .cover {
+        width: 20%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    h1 {
+        color: green;
+    }
+
+    .cover {
+        width: 40%;
+    }
+
+    .artist {
+        width: 40%;
+    }
+
+    #play-icon {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 424px) {
+    h1 {
+        color: yellow;
+    }
+
+    header {
+        width: 40px;
+    }
+
+    #logo, #playlist {
+        display: none;
+    }
+
+    #favicon {
+        display: block;
+        filter: invert();
+    }
+
+    #main-nav ul li span {
+        display: none;
+    }
+
+    #install span {
+        display: none;
+    }
 }
