@@ -32,6 +32,12 @@ header {
     float: left;
 }
 
+header::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 #logo {
     text-align: left;
 }
@@ -43,6 +49,8 @@ header {
 #favicon {
     display: none;
 }
+
+/* Regole navbar */
 
 .navbar-bottom {
     height: 80px;
@@ -85,17 +93,13 @@ header {
     color: white;
 }
 
+/* Regole main e aside */
+
 main {
     background-color: #141922;
     overflow-y: scroll;
     height: 100%;
     /* float: left; */
-}
-
-header::after {
-    content: "";
-    display: table;
-    clear: both;
 }
 
 aside {
@@ -117,6 +121,11 @@ aside {
     font-size: 15px;
 }
 
+#upgrade:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
 #upgrade::after {
     content: '';
     display: table;
@@ -134,12 +143,27 @@ aside {
 
 #main-tags ul {
     margin: 15px 0;
+    font-size: 15px;
+    font-weight: bold;
 }
 
 #main-tags ul li {
     display: inline-block;
     color: #717171;
     text-transform: uppercase;
+    padding: 0 10px;
+}
+
+#main-tags ul li:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.highlight::after {
+    content: '';
+    border-bottom: 2px solid green;
+    display: block;
+    margin: 0 30px;
 }
 
 /* .content {
