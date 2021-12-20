@@ -53,22 +53,45 @@ header::after {
 /* Regole navbar */
 
 .navbar-bottom {
-    height: 80px;
+    height: 100px;
     background-color: black;
 }
 
 .navbar-top {
-    height: calc(100% - 150px);
+    height: calc(100% - 180px);
     position: relative;
 }
 
-.install-link {
-    color: #717171;
-    border-bottom: 2px solid #717171;
+#main-nav {
+    margin-bottom: 15px;
+    background-color: black;
 }
 
-.user {
+#main-nav ul li {
+    padding: 8px 0;
+    font-size: 12px;
+    font-weight: bold;
     color: #717171;
+}
+
+#main-nav ul li:hover {
+    color: white;
+}
+
+#main-nav ul li img {
+    width: 30px;
+    padding-right: 5px;
+}
+
+.select::before {
+    content: "";
+    display: block;
+    border-left: 2px solid green;
+    margin-left: 3px;
+}
+
+#main-nav ul li:first-child {
+    color: white;
 }
 
 #playlist {
@@ -77,20 +100,70 @@ header::after {
     overflow-y: scroll;
 }
 
-#main-nav {
-    background-color: black;
-}
-
-#main-nav ul li {
-    color: #717171;
-}
-
-#main-nav ul li i {
-    font-size: 25px;
-}
-
-#main-nav ul li:first-child {
+#playlist h2 {
     color: white;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.playlist-btn {
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.playlist-btn i:hover, .playlist-btn span:hover {
+    color: white;
+}
+
+.playlist-btn i {
+    font-size: 30px;
+}
+
+.playlist-btn ul li {
+    padding: 5px 0;
+}
+
+.playlist-btn ul li:hover {
+    color: white;
+}
+
+.playlist-btn ul {
+    padding-top: 5px;
+}
+
+.install-link {
+    color: #717171;
+    font-weight: bold;
+    font-size: 13px;
+    text-align: left;
+}
+
+.install-link:hover {
+    color: white;
+}
+
+.user {
+    text-align: left;
+}
+
+.user img {
+    width: 20px;
+    background-color: gray;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.user span {
+    color: white;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+.break {
+    margin: 8px auto;
+    border-bottom: 1px solid gray;
+    color: #717171;
+    width: 90%;
 }
 
 /* Regole main e aside */
