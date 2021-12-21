@@ -70,10 +70,11 @@ header::after {
 }
 
 #main-nav ul li {
-    padding: 8px 0;
+    padding: 8px;
     font-size: 12px;
     font-weight: bold;
     color: #717171;
+    border-left: 3px solid transparent;
 }
 
 #main-nav ul li:hover {
@@ -86,11 +87,8 @@ header::after {
     vertical-align: middle;
 }
 
-.select::before {
-    content: "";
-    display: inline-block;
-    border-left: 2px solid green;
-    height: 25px;
+#main-nav ul li.select {
+    border-left: 3px solid green;
 }
 
 #main-nav ul li:first-child {
@@ -101,6 +99,7 @@ header::after {
     background-color: black;
     color: #717171;
     overflow-y: auto;
+    padding-left: 8px;
 }
 
 #playlist h2 {
@@ -136,6 +135,10 @@ header::after {
     padding-top: 5px;
 }
 
+#install {
+    padding-left: 8px;
+}
+
 .install-link {
     color: #717171;
     font-weight: bold;
@@ -165,10 +168,10 @@ header::after {
 }
 
 .break {
-    margin: 8px auto;
+    margin: 8px;
     border-bottom: 1px solid gray;
     color: #717171;
-    width: 90%;
+    width: 80%;
 }
 
 /* Regole main e aside */
@@ -298,6 +301,10 @@ h3 {
     transform: translate(-50%, -50%);
 }
 
+.overlay-rounded {
+    border-radius: 50%;
+}
+
 .cover-container {
     position: relative;
 }
@@ -306,8 +313,21 @@ h3 {
     display: block;
 }
 
-.title {
+.song-info {
+    padding-top: 20px;
+    align-items: center;
+}
+
+.song-info .gallery-title {
     color: white;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.song-info .gallery-artist {
+    color: #717171;
+    font-weight: bold;
+    font-size: 12px;
 }
 
 /* Riprodotti di recente */
@@ -332,18 +352,14 @@ h3 {
     padding-left: 15px;
 }
 
-.artist {
+.popular-artist {
     width: 200px;
     height: 200px;
     margin: 0 12px;
 }
 
-.artist img {
+.popular-artist img {
     border-radius: 50%;
-}
-
-.song-info {
-    align-items: center;
 }
 
 /* Regole footer */
