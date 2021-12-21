@@ -447,13 +447,15 @@ footer {
 }
 
 #player-buttons {
-    justify-content: space-around;
-    width: 50%;
+    min-width: 50%;
+    text-align: center;
 }
 
 #player-buttons i {
-    width: 40px;
     padding: 0 5px;
+    vertical-align: middle;
+    height: 10px;
+    line-height: 10px;
 }
 
 #player-buttons .fa-play-circle {
