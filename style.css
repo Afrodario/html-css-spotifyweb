@@ -204,10 +204,12 @@ aside {
     border-radius: 25px;
     font-weight: 600;
     font-size: 15px;
+    transition: all 1s linear;
 }
 
 #upgrade:hover {
     transform: scale(1.2);
+    background-color: rgba(255, 255, 255, 0.5);
     cursor: pointer;
 }
 
@@ -316,6 +318,7 @@ h3 {
 .song-info {
     padding-top: 20px;
     align-items: center;
+    text-align: center;
 }
 
 .song-info .gallery-title {
@@ -374,8 +377,7 @@ footer {
 }
 
 #play-now {
-    /* width: 200px; */
-    justify-content: space-between;
+    min-width: 30%;
     padding: 0 10px;
 }
 
@@ -427,26 +429,31 @@ footer {
 }
 
 #player {
-    width: 500px;
+    min-width: calc(100% - 60% - 40px);
     color: white;
     justify-content: space-around;
     align-items: center;
+    margin: 0 20px;
 }
 
 #player-buttons {
     justify-content: space-around;
+    width: 50%;
 }
 
 #player-buttons i {
     width: 40px;
+    padding: 0 5px;
 }
 
 #player-buttons .fa-play-circle {
     font-size: 25px;
+    transition: transform 0.5s linear;
 }
 
 #player-buttons .fa-play-circle:hover {
     transform: scale(1.5);
+    color: green;
 }
 
 #player-nav {
@@ -473,6 +480,11 @@ footer {
     background-color: green;
 }
 
+.timing {
+    font-size: 10px;
+    font-weight: bold;
+}
+
 .play-tab {
     height: 15px;
     width: 15px;
@@ -495,7 +507,7 @@ footer {
 }
 
 #player-options {
-    width: 200px;
+    min-width: 30%;
     color: white;
     justify-content: space-around;
     align-items: center;
