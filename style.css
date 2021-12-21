@@ -124,12 +124,22 @@ header::after {
 }
 
 .playlist-btn ul li {
-    padding: 5px 0;
+    padding: 5px 8px;
 }
 
 .playlist-btn ul li:hover {
-    color: white;
+    background-color: white;
+    border-radius: 10px;
+    opacity: 0.5;
 }
+
+.playlist-btn ul li:first-child:hover {color: purple;}
+.playlist-btn ul li:nth-child(2):hover {color: blue;}
+.playlist-btn ul li:nth-child(3):hover {color: brown;}
+.playlist-btn ul li:nth-child(4):hover {color: goldenrod;}
+.playlist-btn ul li:nth-child(5):hover {color: orangered;}
+.playlist-btn ul li:nth-child(6):hover {color: cyan;}
+.playlist-btn ul li:last-child:hover {color: darkred;}
 
 .playlist-btn ul {
     padding-top: 5px;
