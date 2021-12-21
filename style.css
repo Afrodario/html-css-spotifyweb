@@ -65,7 +65,7 @@ header::after {
 }
 
 #main-nav {
-    margin-bottom: 15px;
+    padding-bottom: 15px;
     background-color: black;
 }
 
@@ -114,12 +114,14 @@ header::after {
     font-size: 12px;
 }
 
-.playlist-btn i:hover, .playlist-btn span:hover {
+.playlist-create:hover {
     color: white;
 }
 
-.playlist-btn i {
+.playlist-create i {
     font-size: 30px;
+    vertical-align: middle;
+    padding: 7px;
 }
 
 .playlist-btn ul li {
