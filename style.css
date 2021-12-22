@@ -127,6 +127,20 @@ header::after {
     padding: 5px 8px;
 }
 
+.playlist-btn .fa-play {
+    margin-left: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+.playlist-btn .fa-play:hover {
+    transform: scale(1.3);
+}
+
+.playlist-btn ul li:hover .fa-play {
+    display: inline-block;
+}
+
 .playlist-btn ul li:hover {
     background-color: white;
     border-radius: 10px;
@@ -147,6 +161,7 @@ header::after {
 
 #install {
     padding-left: 8px;
+    padding-top: 10px;
 }
 
 .install-link {
@@ -169,6 +184,11 @@ header::after {
     background-color: gray;
     border-radius: 50%;
     vertical-align: middle;
+}
+
+.user img:hover {
+    filter: sepia(1);
+    cursor: pointer;
 }
 
 .user span {
@@ -392,11 +412,16 @@ footer {
 }
 
 #play-now-cover, #play-now-song {
+    width: 80px;
     padding: 0 10px;
 }
 
+#play-now-song {
+    width: 60%;
+}
+
 #play-now-cover img {
-    width: 60px;
+    width: 100%;
     margin-left: 5px;
 }
 
@@ -414,8 +439,9 @@ footer {
     color: white;
 }
 
-#play-now-song .play-song:hover {
-    color: white;
+#play-now-song .play-song:hover, 
+#play-now-song .play-artist:hover {
+    text-decoration: underline;
 }
 
 #play-info {
@@ -438,6 +464,10 @@ footer {
     color: white;
 }
 
+#play-icon i:first-child:hover {
+    color: red;
+}
+
 #player {
     min-width: calc(100% - 60% - 40px);
     color: white;
@@ -456,6 +486,11 @@ footer {
     vertical-align: middle;
     height: 10px;
     line-height: 10px;
+    cursor: pointer;
+}
+
+#player-buttons i:hover {
+    color: green;
 }
 
 #player-buttons .fa-play-circle {
@@ -527,6 +562,13 @@ footer {
 
 #player-options i {
     padding: 0 10px;
+    transition: border-radius 0.3s ease-out;
+}
+
+#player-options i:hover {
+    border-radius: 50%;
+    padding: 8px;
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 #volume-bar {
